@@ -18,5 +18,5 @@ public class CharacterBasedReaderExample {
             System.out.println("Error Reading file..");
             e.printStackTrace();
         }
-    }
+     }
 }
