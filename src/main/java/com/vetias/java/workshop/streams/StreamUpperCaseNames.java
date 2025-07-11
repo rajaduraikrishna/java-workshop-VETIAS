@@ -1,9 +1,10 @@
-package com.vetias.java.workshop.collections;
+package com.vetias.java.workshop.streams;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-public class ListExample {
+
+public class StreamUpperCaseNames {
+
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.add("Raja");
@@ -12,11 +13,12 @@ public class ListExample {
         names.add("Sobhan");
         names.add("Prakruti");
         names.add("Durai");
+        names.add("Sathish");
         names.add("Pradyumna");
-        names.forEach(System.out::println);
-        names.sort(Comparator.reverseOrder());
-
-        System.out.println(names);
-
+        names.add("Sathishkumar Thyagarajan");
+        names.stream()
+        .filter(name -> name.startsWith("S") || name.startsWith("s"))
+        .distinct().map(String::toUpperCase).forEach(System.out::println);
     }
+
 }
