@@ -28,6 +28,6 @@ public class Calculator {
         System.out.println("Division: " + calculator.divide(6, 0));
         System.out.println("Addition: " + calculator.add(5, 3));
         System.out.println("Subtraction: " + calculator.subtract(10, 4));
-        System.out.println("Addition Again :" + calculator.add-5,25);
+        System.out.println("Addition Again :" + calculator.add(-5,25));
     }
 }
